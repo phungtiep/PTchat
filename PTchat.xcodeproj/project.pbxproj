@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3283C4735A0175DCF57E98BE /* Pods_PTchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3144278C3BDFFDD4FF4B4F2 /* Pods_PTchat.framework */; };
+		5F35DCBC24C2DA5E006C5CEB /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F35DCBB24C2DA5E006C5CEB /* DatabaseManager.swift */; };
+		5F37348C24BC38A70014C449 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F37348B24BC38A60014C449 /* GoogleService-Info.plist */; };
 		5F41540C24B9C3EF00CD457D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41540B24B9C3EF00CD457D /* AppDelegate.swift */; };
 		5F41540E24B9C3EF00CD457D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41540D24B9C3EF00CD457D /* SceneDelegate.swift */; };
 		5F41541024B9C3EF00CD457D /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F41540F24B9C3EF00CD457D /* ConversationsViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51649D16A3ECA1470A945D9E /* Pods-PTchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTchat.release.xcconfig"; path = "Target Support Files/Pods-PTchat/Pods-PTchat.release.xcconfig"; sourceTree = "<group>"; };
+		5F35DCBB24C2DA5E006C5CEB /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		5F37348B24BC38A60014C449 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5F41540824B9C3EF00CD457D /* PTchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F41540B24B9C3EF00CD457D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F41540D24B9C3EF00CD457D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		5F41542E24B9C86C00CD457D /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		5F41543024B9C8AA00CD457D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5F41543324B9D2C600CD457D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ACACC26E1A6FF0086FEA70BA /* Pods-PTchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTchat.debug.xcconfig"; path = "Target Support Files/Pods-PTchat/Pods-PTchat.debug.xcconfig"; sourceTree = "<group>"; };
+		C3144278C3BDFFDD4FF4B4F2 /* Pods_PTchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3283C4735A0175DCF57E98BE /* Pods_PTchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20261B3AE809223CBFBFB777 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3144278C3BDFFDD4FF4B4F2 /* Pods_PTchat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5F4153FF24B9C3EF00CD457D = {
 			isa = PBXGroup;
 			children = (
 				5F41540A24B9C3EF00CD457D /* PTchat */,
 				5F41540924B9C3EF00CD457D /* Products */,
+				92941F7E45DBD20E248DF035 /* Pods */,
+				20261B3AE809223CBFBFB777 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +89,7 @@
 		5F41540A24B9C3EF00CD457D /* PTchat */ = {
 			isa = PBXGroup;
 			children = (
+				5F37348B24BC38A60014C449 /* GoogleService-Info.plist */,
 				5F41542324B9C64E00CD457D /* Resources */,
 				5F41542224B9C63B00CD457D /* ViewModels */,
 				5F41542124B9C63000CD457D /* Models */,
@@ -122,6 +142,7 @@
 				5F41540B24B9C3EF00CD457D /* AppDelegate.swift */,
 				5F41540D24B9C3EF00CD457D /* SceneDelegate.swift */,
 				5F41543324B9D2C600CD457D /* Extensions.swift */,
+				5F35DCBB24C2DA5E006C5CEB /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -144,6 +165,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		92941F7E45DBD20E248DF035 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACACC26E1A6FF0086FEA70BA /* Pods-PTchat.debug.xcconfig */,
+				51649D16A3ECA1470A945D9E /* Pods-PTchat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F41541C24B9C3F100CD457D /* Build configuration list for PBXNativeTarget "PTchat" */;
 			buildPhases = (
+				0FBB44BB1F5B667D18F79F85 /* [CP] Check Pods Manifest.lock */,
 				5F41540424B9C3EF00CD457D /* Sources */,
 				5F41540524B9C3EF00CD457D /* Frameworks */,
 				5F41540624B9C3EF00CD457D /* Resources */,
+				723368F5AB284113A92A2D1E /* [CP] Embed Pods Frameworks */,
+				D1944F6257D58C8412792F36 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F41541824B9C3F100CD457D /* LaunchScreen.storyboard in Resources */,
+				5F37348C24BC38A70014C449 /* GoogleService-Info.plist in Resources */,
 				5F41541524B9C3F100CD457D /* Assets.xcassets in Resources */,
 				5F41541324B9C3EF00CD457D /* Main.storyboard in Resources */,
 			);
@@ -210,12 +244,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FBB44BB1F5B667D18F79F85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PTchat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		723368F5AB284113A92A2D1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PTchat/Pods-PTchat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PTchat/Pods-PTchat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PTchat/Pods-PTchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1944F6257D58C8412792F36 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PTchat/Pods-PTchat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PTchat/Pods-PTchat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PTchat/Pods-PTchat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F41540424B9C3EF00CD457D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5F41542624B9C7A200CD457D /* LoginViewController.swift in Sources */,
+				5F35DCBC24C2DA5E006C5CEB /* DatabaseManager.swift in Sources */,
 				5F41542824B9C7C300CD457D /* RegisterViewController.swift in Sources */,
 				5F41542F24B9C86C00CD457D /* NewConversationViewController.swift in Sources */,
 				5F41541024B9C3EF00CD457D /* ConversationsViewController.swift in Sources */,
@@ -366,8 +460,10 @@
 		};
 		5F41541D24B9C3F100CD457D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACACC26E1A6FF0086FEA70BA /* Pods-PTchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24ZYKD733A;
 				INFOPLIST_FILE = PTchat/Info.plist;
@@ -378,6 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PTgroup.PTchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -385,10 +482,11 @@
 		};
 		5F41541E24B9C3F100CD457D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51649D16A3ECA1470A945D9E /* Pods-PTchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 24ZYKD733A;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PTchat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -397,6 +495,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PTgroup.PTchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
